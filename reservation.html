@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Reserve a table at habesha eatery and enjoy special food of ours"
+    />
+    <title>Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
+
+  </head>
+  <body >
+     <header class="header">
+            <h1>Habesha Eatery</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="a-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#about">Services</a>
+                <a href="contact.html">Contact</a>
+                <a class="button" href="#">Reserve</a>
+            </nav>
+        </header>
+
+   
+    <main>
+        <section class="Reservation-page"><h1>Reservation page</h1></section> 
+      <section class="reservation-form">
+       
+        <form action="" >
+          
+            <legend>Customer information</legend>
+            <div class="separate-form">
+            <label for="name">full name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder=" your full name"
+            /><br /><br />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              autocomplete="email"
+            /><br /><br />
+            <label for="tel">Phone number:</label>
+            <input
+              type="tel"
+              id="tel"
+              required
+              placeholder="your phone number"
+              pattern="0(9|7)[0-9]{8}"
+            /><br /><br />
+            <label for="date">Date:</label>
+            <input
+              type="date"
+              name="date"
+              id="date"
+              required
+              placeholder="dd/mm/yy"
+            /><br /><br />
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time" placeholder="Your prefered time" required>
+            <br /><br />
+            <label for="party-size">Party size:</label>
+            <input
+              type="number"
+              name="party-size"
+              id="party-size"
+              placeholder="Number of people"
+              min="1"
+              max="15"
+              required
+            /><br /><br />
+                  <label for="preference">preference</label>
+            <select name="preference" id="preference">
+                <option value="">choose Table preference</option>
+                <option value="">Indoor</option>
+                <option value="">Outdoor</option>
+                <option value="">window seat</option>
+            </select><br /><br />
+            <label for="occasion">Occasion</label>
+            <select name="occasion" id="occasion">
+                <option value="">choose occasion</option>
+                <option value="">BirthDay</option>
+                <option value="">Business Meeting</option>
+                <option value="">Anniversary</option>
+                <option value="">Other</option>
+            </select><br /><br />
+            <label for="special-request">Special request:</label>
+            <textarea
+              type="text"
+              name="special-request"
+              id="special-request"
+              placeholder="any thing specific you want"
+            ></textarea><br><br></div>
+            <button type="submit" id="reserve">Reserve</button>
+
+          </fieldset>
+          <br />
+          
+        </form>
+      </section>
+        <footer>
+            <div>
+               
+            </div>
+        </footer>
+        <script src="./app.js"></script>
+    </body>
+</html>
